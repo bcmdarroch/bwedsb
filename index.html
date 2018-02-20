@@ -33,7 +33,6 @@
     </nav>
 </header>
 
-
 <main>
     <section id="splash">
         <h1>We found
@@ -63,15 +62,24 @@
             </p>
         </strong>
     </section>
+
     <section id="rsvp">
         <h2>RSVP</h2>
+        <form name="rsvp-form" method="post" action="send_form_email.php">
+            <label for="names"> Name(s): </label>
+            <input type="text" name="names">
+            <label for="diet"> Dietary Restrictions: </label>
+            <input type="text" name="diet">
+            <input type="submit" value="Submit RSVP">
+        </form>
     </section>
+
     <section id="the-big-day">
         <h2>The Big Day!</h2>
         <ul>
             <li>
                 4:45 PM - Welcome to East Lynn - lovely farm &amp; BnB in Purcellville, VA - directions - where to park/carpool - park by
-                the barn, head behind the inn where chairs are set up
+                the barn (NOT HOUSE), head behind the inn where chairs are set up
             </li>
             <li>
                 5:00 PM - Wedding Ceremony - Trees behind Inn - Officiated by our dear friend Pastor Tom Berlin
@@ -90,6 +98,7 @@
             </li>
         </ul>
     </section>
+
     <section id="accomodations">
         <h2>Accomodations</h2>
         Courtyard Dulles Airport Chantilly 3935 Centerview Drive Chantilly VA 20151 (703) 709-7100 $79/NIGHT 9MIN WALK
@@ -110,6 +119,7 @@
                 target="_blank">Book Airbnb</a>
         </button>
     </section>
+
     <section id="faq">
         <h2>FAQ</h2>
         <ul>
@@ -118,10 +128,10 @@
                 sweater/jacket for evening, sunglasses for ceremony
             </li>
             <li>
-                 gifts
+                 gifts - please don't bring any big items to the wedding! mail to us instead
             </li>
             <li>
-                carpool
+                parking/carpool - parking is limited so please carpool (have a google spreadsheet to edit on the website)
             </li>
             <li>
                 cash bar
@@ -129,12 +139,14 @@
         </ul>
         
     </section>
+
     <section id="contact-us">
         <h2>Contact Us!</h2> 
         If you have any questions at all, please email us at
-        <a href="mailto:bwedsb2018@gmail.com">bwedsb2018@gmail.com</a>
+        <a>bwedsb2018@gmail.com</a>
         Snap pics and tag us at # ...
     </section>
+
     <section id="dinner-seating">
         <h2>Dinner Seating</h2>
         <p>Coming soon!</p>
