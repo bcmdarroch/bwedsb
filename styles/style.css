@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oleo+Script');
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: #42b7db;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    width: 100%;
+}
+
+
+/* menu styling */
+nav {
+    position: fixed;
+    top: 0%;
+    background: white;
+    width: 100%;
+}
+
+ul {
+    min-height: 100px;
+    padding: 0;
+    margin: 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media only screen and (orientation: portrait) {
+    ul {
+        display: block;
+    }
+    
+    li {
+        width: 100%;
+        margin: 0 0 5% 0;
+    }
+}
+
+li {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+/* splash styling */
+#splash {
+
+}
+
+/* old styling */
+
+
+footer {
+    /* margin-top: 100px; */
+}
+
+h1 {
+    /* margin-bottom: 0; */
+    font-size: 7rem;
+    font-family: 'Oleo Script', cursive;
+}
+
+h2, p {
+    font-weight: bolder;
+}
+
+h4 {
+    /* font-size: 2rem; */
+}
+
+p {
+    /* font-size: 1.5rem; */
+}
+
+a {
+    text-decoration: none;
+}
+
+li a:hover {
+    color:  #42b7db;
+}
+
+strong, a {
+    color: #e84133;
+}
+
+img#bb {
+    width: 100%;
+    /* padding-left: 2%; */
+}
+
+img#heart {
+    width: 5%;
+}
