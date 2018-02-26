@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Oleo+Script');
 
+/* general/page styling */
 *, *:before, *:after {
   -webkit-box-sizing: border-box; 
   -moz-box-sizing: border-box; 
@@ -22,6 +23,9 @@ body {
     width: 100%;
 }
 
+h1, h2, nav {
+    font-family: 'Oleo Script', cursive;
+}
 
 /* menu styling */
 nav {
@@ -36,7 +40,7 @@ ul {
 }
 
 nav ul {
-    min-height: 50px;
+    min-height: 75px;
     padding: 0;
     margin: 0;
     display: -webkit-flex;
@@ -47,13 +51,20 @@ nav ul {
     justify-content: space-around;
 }
 
-li {
-    font-size: 1rem;
+nav li {
+    font-size: 1.75em;
     font-weight: bolder;
-    text-align: center;
+}
+
+nav a {
+    color: #db200f;
 }
 
 /* splash styling */
+h1 {
+    font-size: 7em;
+}
+
 #splash {
     display: -webkit-flex;
     display: flex;
@@ -61,9 +72,11 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 15%;
 }
 
 #splash h1, h2 {
+    text-align: center;
     margin-bottom: 2%;
 }
 
@@ -71,13 +84,7 @@ img#bb {
     width: 50%;
 }
 
-/* form */
-form label, input {
-    display: block;
-    width: 100%;
-    margin: 0 0 5% 0;
-}
-
+/* section spacing */
 #rsvp, #the-big-day, #accomodations, #faq, #contact-us, #dinner-seating, footer {
     display: -webkit-flex;
     display: flex;
@@ -85,7 +92,24 @@ form label, input {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 5%;
+    margin: 0 20% 15% 20%;
+}
+
+h3 {
+    color: #9e0f02;
+    font-weight: bolder;
+}
+
+li {
+    text-align: center; 
+}
+
+#the-big-day li {
+    margin: 0 0 10% 0;
+}
+
+#the-big-day li p {
+    margin: .5em 0;
 }
 
 /* mobile styling */
@@ -95,7 +119,7 @@ form label, input {
     }
     
     li {
-        font-size: 2rem;
+        font-size: 2em;
         width: 100%;
         margin: 0 0 5% 0;
     }
@@ -110,12 +134,6 @@ form label, input {
 
 
 /* old styling */
-h1 {
-    /* margin-bottom: 0; */
-    font-size: 7rem;
-    font-family: 'Oleo Script', cursive;
-}
-
 #splash h2 {
     text-align: center;
 }
@@ -133,7 +151,7 @@ li a:hover {
 }
 
 strong, a {
-    color: #e84133;
+    color: #9e0f02;
 }
 
 img#heart {
