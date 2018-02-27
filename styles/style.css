@@ -12,6 +12,11 @@ html, body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+/* colors & fonts */
 html {
     font-size: 100%;
 }
@@ -19,12 +24,35 @@ html {
 body {
     background-color: #42b7db;
     font-family: 'Montserrat', sans-serif;
-    color: white;
     width: 100%;
 }
 
 h1, h2, nav {
     font-family: 'Oleo Script', cursive;
+}
+
+h1 {
+    color: white;
+}
+
+#splash strong {
+    color: #db200f;
+}
+
+h3, p {
+    color: #db200f;
+}
+
+a {
+   color: #42b7db;
+}
+
+a:hover {
+    color: #b3e8ed;
+}
+
+footer p {
+    color: white;
 }
 
 /* menu styling */
@@ -36,6 +64,7 @@ nav {
 }
 
 ul {
+    padding-left: 0;
     list-style: none;
 }
 
@@ -72,16 +101,22 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
+}
+
+#splash div {
+    width: 50%;
+    font-size: 1.75em;
 }
 
 #splash h1, h2 {
     text-align: center;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 img#bb {
     width: 50%;
+    margin-bottom: 5%;
 }
 
 /* section spacing */
@@ -95,9 +130,40 @@ img#bb {
     margin: 0 20% 15% 20%;
 }
 
-h3 {
-    color: #9e0f02;
+.button {
+    padding: 1rem 0;
+    color: #fff;
+    min-width: 14.6875rem;
+    background: #99383f;
+    border-color: #99383f;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: .875rem;
+    font-weight: 400;
+    letter-spacing: .125rem;
+    -webkit-border-radius: 2.1875rem;
+    -moz-border-radius: 2.1875rem;
+    -ms-border-radius: 2.1875rem;
+    -o-border-radius: 2.1875rem;
+    border-radius: 2.1875rem;
+}
+
+#rsvp a {
+    background: #b3e8ed;
+}
+
+.block {
+    background: white;
+    border-radius: 10px;
+    padding: 2%;
+    text-align: center;
+}
+
+h2 {
+    color: #db200f;
+    font-size: 3em;
     font-weight: bolder;
+    margin-top: 0;
 }
 
 li {
@@ -131,29 +197,7 @@ li {
 }
 
 
-
-
-/* old styling */
-#splash h2 {
-    text-align: center;
-}
-
-h2, p {
-    font-weight: bolder;
-}
-
-a {
-    text-decoration: none;
-}
-
-li a:hover {
-    color:  #42b7db;
-}
-
-strong, a {
-    color: #9e0f02;
-}
-
+/* footer */
 img#heart {
     width: 5%;
-}
+} 
