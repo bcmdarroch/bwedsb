@@ -127,25 +127,28 @@ img#bb {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin: 0 20% 15% 20%;
+    margin: 0 20% 10% 20%;
 }
 
 .button {
-    padding: 1rem 0;
+    padding: 1.25em;
     color: #fff;
-    min-width: 14.6875rem;
-    background: #99383f;
-    border-color: #99383f;
+    min-width: 15%;
+    background: #b3e8ed;
+    border-color: #b3e8ed;
     overflow: hidden;
     text-transform: uppercase;
-    font-size: .875rem;
+    font-size: 1em;
     font-weight: 400;
-    letter-spacing: .125rem;
-    -webkit-border-radius: 2.1875rem;
-    -moz-border-radius: 2.1875rem;
-    -ms-border-radius: 2.1875rem;
-    -o-border-radius: 2.1875rem;
-    border-radius: 2.1875rem;
+    -webkit-border-radius: 2.1875em;
+    -moz-border-radius: 2.1875em;
+    -ms-border-radius: 2.1875em;
+    -o-border-radius: 2.1875em;
+    border-radius: 2.1875em;
+}
+
+a.button:hover {
+    color: #42b7db;
 }
 
 #rsvp a {
@@ -153,6 +156,13 @@ img#bb {
 }
 
 .block {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
     background: white;
     border-radius: 10px;
     padding: 2%;
@@ -171,11 +181,33 @@ li {
 }
 
 #the-big-day li {
-    margin: 0 0 10% 0;
+    margin: 0 0 7% 0;
 }
 
 #the-big-day li p {
     margin: .5em 0;
+}
+
+#the-big-day li:first-child p:last-child {
+    font-size: 1.5em;
+}
+
+#the-big-day li:last-child {
+    margin-bottom: 0;
+}
+
+#accomodations div {
+    width: 100%;
+}
+
+.buttons {
+    margin-top: 3%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
 /* mobile styling */
