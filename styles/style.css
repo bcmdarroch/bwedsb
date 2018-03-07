@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Oleo+Script');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Oleo+Script');
 
 /* general/page styling */
 *, *:before, *:after {
@@ -35,11 +35,15 @@ h1 {
     color: white;
 }
 
+h3 {
+    color: #42b7db;
+}
+
 #splash strong {
     color: #db200f;
 }
 
-h3, p {
+p {
     color: #db200f;
 }
 
@@ -49,6 +53,10 @@ a {
 
 a:hover {
     color: #b3e8ed;
+}
+
+strong {
+    font-weight: 700;
 }
 
 footer p {
@@ -165,34 +173,58 @@ a.button:hover {
 
     background: white;
     border-radius: 10px;
-    padding: 2%;
+    padding: 2em;
     text-align: center;
 }
 
 h2 {
-    color: #db200f;
+    color: #a71407;
     font-size: 3em;
     font-weight: bolder;
     margin-top: 0;
 }
 
 li {
+    width: 90%;
     text-align: center; 
 }
 
-#the-big-day li {
-    margin: 0 0 7% 0;
+/* heading lines */
+h3 {
+  position: relative;
+  text-align: center;
 }
 
-#the-big-day li p {
+h3 span {
+  background: #fff;
+  padding: 0 15px;
+  position: relative;
+  z-index: 1;
+}
+
+h3:before {
+  background: #42b7db;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+    top: 50%;
+  width: 100%;
+}
+
+h1:before {
+  left: 0;
+}
+
+#the-big-day li, #faq li {
+    margin: 0 0 5% 0;
+}
+
+#the-big-day li p, #faq li p {
     margin: .5em 0;
 }
 
-#the-big-day li:first-child p:last-child {
-    font-size: 1.5em;
-}
-
-#the-big-day li:last-child {
+#the-big-day li:last-child, #faq li:last-child {
     margin-bottom: 0;
 }
 
@@ -230,6 +262,11 @@ li {
 
 
 /* footer */
+footer a {
+    font-size: 1.5em;
+    color: #a71407;
+}
+
 img#heart {
     width: 5%;
 } 
