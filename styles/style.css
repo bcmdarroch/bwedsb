@@ -68,6 +68,7 @@ nav {
     position: fixed;
     top: 0%;
     background: white;
+    overflow: hidden;
     width: 100%;
 }
 
@@ -246,14 +247,28 @@ h1:before {
     justify-content: space-around;
 }
 
-/* mobile styling */
+/* footer */
+footer a {
+    font-size: 1.5em;
+    color: #a71407;
+}
+
+img#heart {
+    width: 5%;
+} 
+
+/* mobile styles */
 @media only screen and (orientation: portrait) {
     ul {
         display: block;
     }
     
+    p {
+        font-size: 1.5em;
+    }
+
     li {
-        font-size: 2em;
+        font-size: 1.5em;
         width: 100%;
         margin: 0 0 5% 0;
     }
@@ -264,13 +279,24 @@ h1:before {
     }   
 }
 
+@media only screen and (orientation: portrait) {
+    nav {
+        display: none;
+    }
 
-/* footer */
-footer a {
-    font-size: 1.5em;
-    color: #a71407;
+   #rsvp, #the-big-day, #accomodations, #faq, #contact-us, #dinner-seating, footer {
+        margin: 0 10% 5% 10%;
+    }
+
+    #splash .block {
+        width: 80%;
+    }
+
+    .block {
+        width: 100%;
+    }
+
+    h3:before {
+        background: white;
+    }
 }
-
-img#heart {
-    width: 5%;
-} 
